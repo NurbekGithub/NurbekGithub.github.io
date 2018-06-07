@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('background.jpg')
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border: 3px solid rgba(255,255,255, .4);
+  background: rgba(255,255,255, .2);
+  overflow-x: hidden;
+  transition: all .3s;
+}
+
+.items.active {
+  transform: scale(1.04);
+  /* overflow-x: auto; */
+  background: rgba(255, 255, 255, .5);
+}
+
+.items.shake {
+  border-color: rgba(255, 64, 64, 0.6);
+  animation: shake .6s 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  10% {
+    transform: translate(-5px, -1px)
+  }
+  20% {
+    transform: translate(5px, 1px)
+  }
+  30% {
+    transform: translate(-5px, -1px)
+  }
+  40% {
+    transform: translate(5px, 1px)
+  }
+  50% {
+    transform: translate(-5px, -1px)
+  }
+  60% {
+    transform: translate(5px, 1px)
+  }
+  70% {
+    transform: translate(-5px, -1px)
+  }
+  80% {
+    transform: translate(5px, 1px)
+  }
+  90% {
+    transform: translate(-5px, -1px)
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.item {
+  height: 300px;
+  min-height: 80%;
+  flex: 0 0 100%;
+}
+
+.nurbek {
+  background: url('person/nurbek.jpg') no-repeat 50% 50%;
+}
+.yerke {
+  background: url('person/yerke.jpg') no-repeat 50% 50%;
+}
+.abylai {
+  background: url('person/abylai.jpg') no-repeat 50% 50%;
+}
+.zangar {
+  background: url('person/zangar.jpg') no-repeat 50% 20%;
+  background-size: 50%;
+}
+.aidar {
+  background: url('person/aidar.jpg') no-repeat 50% 50%;
+  background-size: 50%;
+}
+.meir {
+  background: url('person/meir.jpg') no-repeat 50% 50%;
+}
