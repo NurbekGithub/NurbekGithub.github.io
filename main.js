@@ -56,10 +56,12 @@ function doAction(transcript) {
 }
 
 function doScroll(current) {
+  document.getElementById('nurbekAudio').pause();
   slider.scroll({
     left: (current * clientWidth),
     behavior: 'smooth' 
   })
+  if(current === 1) document.getElementById('nurbekAudio').play();
 }
 
 function doShake(current) {
