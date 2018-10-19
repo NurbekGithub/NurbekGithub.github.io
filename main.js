@@ -43,11 +43,15 @@ function doAction(transcript) {
       current = 4;
       doScroll(current);
       break;
+    case transcript.toLowerCase().includes('айзере'):
+      current = 5;
+      doScroll(current);
+      break;
     case transcript.toLowerCase().includes('мейржан') ||
          transcript.toLowerCase().includes('миржан') ||
          transcript.toLowerCase().includes('миша') ||
          transcript.toLowerCase().includes('мишка'):
-      current = 5;
+      current = 6;
       doScroll(current);
       break;
     default:
